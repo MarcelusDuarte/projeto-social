@@ -40,3 +40,23 @@ iframe#tela { /* configura a imagem inserida no home.html para caber certo dentr
     width: 266px;
     height: 471px;
 }
+
+section#redes-sociais {
+    text-align: right; 
+}
+
+section#redes-sociais img { /* se colocar > img vai dar erro. A img está dentro do link que está dentro da section. Ou coloca assim, ou coloca section#redes-sociais > a > img */
+    width: 50px; /* nao precisa configurar height porque a imagem é quadrada originalmente. Quando diminui a largura, diminui a altura automatico */
+    margin: 10px;
+    border-radius: 50%; /* tranforma imagens quadradas em circulos alterando as bordas*/
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box; /* agora a borda já faz parte da caixa */
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.637); /* borda criada fica por fora da imagem e mexe os outros icones. Para resolver usamos box-sizing: border-box na imagem*/
+    transform: translate(-3px, -3px); /* como o icone levantou, precisa alterar a sombra */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+    transition: transform .3s, border .3s; /* transition para o efeito do hover ser mais suave e tambem da borda branca aparecendo */
+
+}
