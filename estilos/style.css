@@ -32,3 +32,11 @@ section#telefone {
     width: 311px;
     background: url('../imagens/frame-iphone.png') no-repeat; 
 }
+
+iframe#tela { /* configura a imagem inserida no home.html para caber certo dentro do iframe. Agora podemos colocar qualquer imagem dentro do iframe */
+    position: relative;
+    top: 80px;
+    left: 23px;
+    width: 266px;
+    height: 471px;
+}
